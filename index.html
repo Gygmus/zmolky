@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Žmolky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Žmolky</h1>
+        <div id="players">
+            <div class="input-group">
+                <input type="text" id="playerName" placeholder="Jméno hráče">
+                <button id="addPlayerBtn" onclick="addPlayer()">Přidat hráče</button>
+            </div>
+            <button id="startGameBtn" onclick="startGame()">START</button>
+        </div>
+        <div id="game">
+            <div id="scoreboard">
+                <h2>Tabulka</h2>
+                <table id="scoreTable">
+                    <thead>
+                        <tr>
+                            <th>Hráč</th>
+                            <th>Body</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div id="scoreInput" style="display: none;">
+                <h3>Počet bodů:</h3>
+                <div id="scoreButtons">
+                    <div>
+                        <button onclick="addScore(1)">1</button>
+                        <button onclick="addScore(2)">2</button>
+                        <button onclick="addScore(3)">3</button>
+                        <button onclick="addScore(4)">4</button>
+                    </div>
+                    <div>
+                        <button onclick="addScore(5)">5</button>
+                        <button onclick="addScore(6)">6</button>
+                        <button onclick="addScore(7)">7</button>
+                        <button onclick="addScore(8)">8</button>
+                    </div>
+                    <div>
+                        <button onclick="addScore(9)">9</button>
+                        <button onclick="addScore(10)">10</button>
+                        <button onclick="addScore(11)">11</button>
+                        <button onclick="addScore(12)">12</button>
+                    </div>
+                    <div>
+                        <button class="cross" onclick="addScore(0)">✖️</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="winner"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

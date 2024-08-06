@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#players {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#players input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    font-size: 16px; /* Přidáno pro zabránění přibližování */
+}
+
+#addPlayerBtn {
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Přidáno pro konzistenci */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#startGameBtn {
+    padding: 15px 20px;
+    margin-top: 10px;
+    width: 50%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#scoreboard {
+    margin-bottom: 20px;
+}
+
+#winner {
+    text-align: center;
+    font-size: 1.2em;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.current-player {
+    background-color: yellow;
+}
+
+.eliminated-player {
+    background-color: red;
+    color: white;
+}
+
+.winner-player {
+    background-color: green;
+    color: white;
+}
+
+#scoreButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#scoreButtons div {
+    display: flex;
+    gap: 10px;
+}
+
+#scoreButtons button {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#scoreButtons button.cross {
+    background-color: #ff4d4d;
+}
+
+#scoreButtons button.cross:hover {
+    background-color: #ff3333;
+}
